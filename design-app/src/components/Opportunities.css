@@ -1,0 +1,107 @@
+/* Section for the screenshot content */
+.about-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.about-heading {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about-heading span {
+  font-style: italic;
+  color: #ff0000;
+}
+
+.about-image {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+/* Cards Section */
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #333;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.card button {
+  background-color: #002244;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.card button:hover {
+  background-color: #0055aa;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .about-heading {
+    font-size: 2em;
+  }
+
+  .about-image {
+    width: 100%;
+  }
+}
+.about-heading {
+  font-size: 3em; /* Make the font larger for emphasis */
+  font-weight: bold; /* Bold text */
+  font-style: italic; /* Slightly italicize the text */
+  text-align: center; /* Center the text */
+  margin-bottom: 30px; /* Add some spacing below */
+  line-height: 1.2; /* Adjust line height for better readability */
+  font-family: 'Playfair Display', serif; /* A stylish serif font */
+}
+
+.about-heading span {
+  color: #ff0000; /* Red color for the highlighted word */
+  font-style: normal; /* Make the highlighted text non-italic */
+}

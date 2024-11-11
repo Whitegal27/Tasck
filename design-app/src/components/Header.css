@@ -1,0 +1,110 @@
+.header {
+  background: url('../bbg\ 3-2\ 1.png') no-repeat center center;
+  background-size: cover;
+  color: white;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #ccc;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: auto 0;
+  font-size: x-small;
+  align-items: end;
+}
+
+.hero-content h1 {
+  font-size: 10em;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #00ff00; /* Highlight color */
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background 0.3s;
+}
+
+.primary-button {
+  background-color: white;
+  color: #002244;
+}
+
+.secondary-button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.primary-button:hover {
+  background-color: #f0f0f0;
+}
+
+.secondary-button:hover {
+  background-color: white;
+  color: #002244;
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 2em;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

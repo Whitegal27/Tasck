@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: #002244;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.hero .buttons {
+  margin-top: 20px;
+}
+
+.hero button {
+  background: white;
+  color: #002244;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.hero button:hover {
+  background: #ccc;
+}
+
+.opportunities {
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.opportunities h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.opportunities .cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.opportunities .card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 200px;
+  max-width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.about {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.footer {
+  background: #002244;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2em;
+  }
+  
+  .opportunities .card {
+    flex: 1 1 100%;
+  }
+}
